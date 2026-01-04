@@ -114,3 +114,54 @@ body {
 .popular-cards .card-rating {
     margin-bottom: 5px;
 }
+
+/***** Things to Do ********/
+.things-to-do {
+    margin: 60px 80px 60px 80px;
+}
+
+.places-to-visit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/****** Footer ************/
+.footer-container {
+    background-color: var(--main-bg-color);
+    text-align: left;
+    padding: 20px;
+    margin: 0px 40px 0px 40px; 
+
+    display: flex;
+    flex-direction: rows;
+    justify-content: flex-start;
+    gap: 20%;
+}
+
+.about, .our-accomodations, .support {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media screen and (max-width: 770px) {
+    .places-to-visit {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 30px;
+    }
+
+    .about, .our-accomodations, .support {
+        gap: 15px;
+    }
+}
+
+
