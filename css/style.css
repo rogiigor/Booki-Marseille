@@ -122,7 +122,6 @@ body {
 
 .places-to-visit {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -134,7 +133,6 @@ body {
     margin: 0px 40px 0px 40px; 
 
     display: flex;
-    flex-direction: rows;
     justify-content: flex-start;
     gap: 20%;
 }
