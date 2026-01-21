@@ -126,21 +126,31 @@ body {
 }
 
 /****** Footer ************/
-.footer-container {
+footer {
     background-color: var(--main-bg-color);
-    text-align: left;
-    padding: 20px;
-    margin: 0px 40px 0px 40px;
-
-    display: flex;
-    justify-content: flex-start;
-    gap: 20%;
+    padding: 30px;
 }
 
-.about, .our-accomodations, .support {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+}
+
+ul.no-bullets {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+h3 {
+    padding: 0px;
+    margin: 1px;
+}
+
+li {
+    padding: 0px;
+    margin-top: 10px;
 }
 
 a:link, a:visited, a:active {
@@ -148,23 +158,22 @@ a:link, a:visited, a:active {
     color: black;
 }
 
-@media screen and (max-width: 770px) {
-    .places-to-visit {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-    }
+@media (width < 800px) {
+   .main-container {
+        grid-template-columns: 1fr;
+   }
 
-    .footer-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        gap: 30px;
-    }
+   .popular {
+      order: 1;
+   }
 
-    .about, .our-accomodations, .support {
-        gap: 15px;
-    }
+   .listings {
+        order: 2;
+   }
+
+   .footer-container {
+        grid-template-columns: 1fr;
+   }
 }
 
 
