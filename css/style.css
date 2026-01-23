@@ -125,6 +125,45 @@ body {
     justify-content: space-between;
 }
 
+/****** Header *************/
+.header-container {
+    display: grid;
+    grid-template-columns: 1fr 12fr 1fr 1fr;
+    grid-gap: 40px;
+}
+
+.booki-logo {
+    padding: 10px;
+    margin: 10px;
+}
+
+.booki-logo img {
+    height: 20px;
+    width: 60px;
+}
+
+.accomodation-link, .things-to-do-link {
+    padding-top: 20px;
+}
+
+.accomodation-link a, .things-to-do-link a {
+    padding-top: 20px;
+}
+
+.accomodation-link a:hover, .things-to-do-link a:hover {
+    padding-top: 20px;
+    border-top: 2px solid var( --main-color);
+    color:  var( --main-color);
+}
+
+header h2 {
+    margin-bottom: 0px;
+}
+
+header p {
+    margin-bottom: 20px;
+}
+
 /****** Footer ************/
 footer {
     background-color: var(--main-bg-color);
