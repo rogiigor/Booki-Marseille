@@ -128,13 +128,13 @@ body {
 /****** Header *************/
 .header-container {
     display: grid;
-    grid-template-columns: 1fr 12fr 1fr 1fr;
+    grid-template-columns: 1fr 8fr 1fr 1fr;
     grid-gap: 40px;
 }
 
 .booki-logo {
-    padding: 10px;
-    margin: 10px;
+    padding: 10px 10px 20px 0px;
+    margin: 10px 10px 20px 0px;
 }
 
 .booki-logo img {
