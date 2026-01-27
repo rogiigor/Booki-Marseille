@@ -175,6 +175,49 @@ header p {
     margin-bottom: 20px;
 }
 
+/***** Search Form *******/
+.search-form img {
+    margin: 20px 20px 20px 0px;
+    padding: 20px 20px 20px 0px;
+}
+
+/***** Filters ******/
+.filters {
+    padding-bottom: 80px;
+}
+
+.filters nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 30px;
+    width: 1000px;
+}
+
+.budget-and-family, .romantic-top-pick {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.budget img, .family-friendly img, .romanic img, .top-pick img {
+    width: 30px;
+    height: 30px;
+}
+
+.budget, .family-friendly, .romanic, .top-pick {
+    display: flex;
+    border: 2px solid #D9D9D9;
+    gap: 20px;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+.budget:hover, .family-friendly:hover, .romanic:hover, .top-pick:hover {
+    background-color: #DEEBFF;
+}
+
 /****** Footer ************/
 footer {
     background-color: var(--main-bg-color);
@@ -258,6 +301,10 @@ a:link, a:visited, a:active {
 
     .accomodation-link a, .things-to-do-link a {
         padding-top: 0px;
+    }
+
+    .filters nav {
+        height: 200px;
     }
 }
 
