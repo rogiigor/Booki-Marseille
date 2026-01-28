@@ -229,12 +229,11 @@ header p {
 /** accomoadation info ****/
 .accomodations-info {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     width: 600px; 
     gap: 20px;
     font-size: 1.3em;
-    padding: 10px;
-    /* border: 2px solid brown; */
+    padding: 10px 10px 20px 0px;
 }
 
 .info-img {
