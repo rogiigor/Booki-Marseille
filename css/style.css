@@ -184,6 +184,7 @@ header p {
 /***** Filters ******/
 .filters {
     padding-bottom: 80px;
+    padding-bottom: 40px;
 }
 
 .filters nav {
@@ -224,6 +225,23 @@ header p {
     justify-content: center;
     font-size: 1.1em;
 }
+
+/** accomoadation info ****/
+.accomodations-info {
+    display: flex;
+    justify-content: center;
+    width: 550px; 
+    gap: 20px;
+    font-size: 1.3em;
+    padding: 10px;
+}
+
+.accomodations-info img {
+    align-self: center;
+    height: 15px;
+}
+
+/** TODO: cicrcle around i
 
 /****** Footer ************/
 footer {
