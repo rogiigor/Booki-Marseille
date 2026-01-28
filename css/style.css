@@ -218,6 +218,13 @@ header p {
     background-color: #DEEBFF;
 }
 
+.filters-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.1em;
+}
+
 /****** Footer ************/
 footer {
     background-color: var(--main-bg-color);
