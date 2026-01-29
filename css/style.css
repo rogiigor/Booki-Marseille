@@ -176,9 +176,64 @@ header p {
 }
 
 /***** Search Form *******/
+.search-form {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
 .search-form img {
     margin: 20px 20px 20px 0px;
     padding: 20px 20px 20px 0px;
+}
+
+.form-container {
+    width: 350px;
+    height: 45px;
+    margin: 0px 0px 30px 0px;
+    display: flex;
+}
+
+.input-and-button {
+    display: flex;
+}
+
+.input {
+    height: 50px;
+    width: 180px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    font-size: 1.15em;
+    padding-left: 30px;
+}
+
+.button {
+    height: 45px;
+    margin: 0px;
+}
+
+
+.button {
+    height: 115%;
+    width: 100px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: var( --main-color);
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.map-icon {
+    height: 115%;
+    background-color: #F2F2F2;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.map-icon img {
+    display: flex;
+    align-self: center;
+    margin: 0px 0px 10px 20px;
 }
 
 /***** Filters ******/
@@ -213,6 +268,7 @@ header p {
     gap: 20px;
     padding: 10px 20px;
     border-radius: 30px;
+    cursor: pointer;
 }
 
 .budget:hover, .family-friendly:hover, .romanic:hover, .top-pick:hover {
