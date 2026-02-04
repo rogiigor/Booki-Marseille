@@ -274,11 +274,6 @@ header p {
     margin-bottom: 40px;
 }
 
-.search-form img {
-    margin: 20px 20px 20px 0px;
-    padding: 20px 20px 20px 0px;
-}
-
 .form-container {
     width: 350px;
     height: 45px;
@@ -316,17 +311,16 @@ header p {
     border: none;
 }
 
-.map-icon {
-    height: 115%;
+.location-icon {
+    height: 120%;
     background-color: #F2F2F2;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 }
 
-.map-icon img {
-    display: flex;
-    align-self: center;
-    margin: 0px 0px 10px 20px;
+.location-icon i {
+    margin: 25px 20px 0px 20px;
+    color: black;
 }
 
 /***** Filters ******/
