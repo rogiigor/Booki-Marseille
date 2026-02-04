@@ -246,15 +246,11 @@ body {
     gap: 40px;
 }
 
-.accomodation-link, .things-to-do-link {
+.nav-link {
     padding-top: 20px;
 }
 
-.accomodation-link a, .things-to-do-link a {
-    padding-top: 20px;
-}
-
-.accomodation-link a:hover, .things-to-do-link a:hover {
+.nav-link a:hover {
     padding-top: 20px;
     border-top: 2px solid var( --main-color);
     color:  var( --main-color);
@@ -463,7 +459,7 @@ a:link, a:visited, a:active {
         justify-content: space-around;
    }
 
-   .accomodation-link a:hover, .things-to-do-link a:hover {
+   .nav-link a:hover {
      padding-bottom: 20px;
      border-top: none;
      border-bottom: 2px solid var( --main-color);
@@ -474,11 +470,7 @@ a:link, a:visited, a:active {
         margin-top: 20px;
     }
 
-    .accomodation-link, .things-to-do-link {
-        padding-top: 0px;
-    }
-
-    .accomodation-link a, .things-to-do-link a {
+    .nav-link {
         padding-top: 0px;
     }
 
