@@ -290,7 +290,7 @@ header p {
     width: 180px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     font-weight: bold;
-    font-size: 1.15em;
+    font-size: 1.20em;
     padding-left: 30px;
 }
 
@@ -332,33 +332,43 @@ header p {
 .filters nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 20px;
     flex-wrap: wrap;
     height: 30px;
     width: 1000px;
 }
 
-.budget-and-family, .romantic-top-pick {
+.filters-cards {
     display: flex;
     justify-content: space-between;
     gap: 40px;
 }
 
-.budget img, .family-friendly img, .romanic img, .top-pick img {
+.filters-cards .icon {
     width: 30px;
     height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.budget, .family-friendly, .romanic, .top-pick {
+.filters-cards .card {
     display: flex;
     border: 2px solid #D9D9D9;
-    gap: 20px;
-    padding: 10px 20px;
+    gap: 6px;
+    padding: 10px 15px;
     border-radius: 30px;
     cursor: pointer;
 }
 
-.budget:hover, .family-friendly:hover, .romanic:hover, .top-pick:hover {
+.filter-card-title {
+    flex-direction: column;
+    align-self: center;
+}
+
+.filters-cards .card:hover {
     background-color: #DEEBFF;
 }
 
@@ -374,16 +384,16 @@ header p {
     display: flex;
     justify-content: flex-start;
     width: 600px; 
-    gap: 20px;
-    font-size: 1.3em;
+    gap: 10px;
+    font-size: 1.1em;
     padding: 10px 10px 20px 0px;
 }
 
-.info-icon {
+.accommodations-info .info-icon {
     border: 2px solid #D9D9D9;
     align-self: center;
     height: 20px;
-    padding: 5px 15px 10px 15px;
+    padding: 3px 12px 7px 12px;
     border-radius: 50%;
 }
 
