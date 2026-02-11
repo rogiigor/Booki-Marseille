@@ -530,7 +530,7 @@ a:link, a:visited, a:active {
 
     .filters-cards {
         justify-content: flex-start;
-        gap: unset;
+        gap: 30px;
     }
 
     .accommodations-info {
