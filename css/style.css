@@ -430,7 +430,7 @@ a:link, a:visited, a:active {
     color: black;
 }
 
-@media (width < 800px) {
+@media (width < 768px) {
    .main-container {
         grid-template-columns: 1fr;
    }
@@ -480,6 +480,61 @@ a:link, a:visited, a:active {
 
     .filters nav {
         height: 200px;
+    }
+}
+
+@media (width < 1024px) {
+    .accommodation-and-popular {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .accommodation {
+        width: 100%;
+    }
+
+    .popular {
+        width: 100%;
+    }
+
+    .popular-cards {
+        /* border: 2px solid red; */
+        display:flex;
+        gap: 20px;
+    }
+
+   .popular-cards img {
+        width: 80px;
+    }
+
+    .places-to-visit-cards img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .places-to-visit-cards .card .image-wrapper {
+        max-width:250px;
+    }
+
+    .places-to-visit-cards {
+        gap: 20px;
+    }
+
+    .filters nav {
+        display: block;
+    }
+
+    .filters .filters-header {
+        margin-bottom: 10px;
+    }
+
+    .filters-cards {
+        justify-content: flex-start;
+        gap: unset;
+    }
+
+    .accommodations-info {
+        margin-top: 20px;
     }
 }
 
