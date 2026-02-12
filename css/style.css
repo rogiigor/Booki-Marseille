@@ -297,10 +297,6 @@ header p {
 .button {
     height: 45px;
     margin: 0px;
-}
-
-
-.button {
     height: 115%;
     width: 100px;
     border-top-right-radius: 15px;
@@ -309,6 +305,14 @@ header p {
     color: white;
     cursor: pointer;
     border: none;
+}
+
+.button-text {
+    display: inline;
+}
+
+.button-icon {
+    display: none;
 }
 
 .location-icon {
@@ -430,8 +434,8 @@ a:link, a:visited, a:active {
     color: black;
 }
 
-@media (width < 768px) {
-   .main-container {
+@media (max-width: 768px) {
+   #main-container {
         grid-template-columns: 1fr;
    }
 
@@ -450,7 +454,8 @@ a:link, a:visited, a:active {
    /* **** Header *** */
    .header-container {
         flex-direction: column;
-        align-content: space-between;
+        align-items: center;
+        /* align-content: space-between; */
    }
 
    .booki-logo {
@@ -460,14 +465,32 @@ a:link, a:visited, a:active {
    }
 
    .header-container ul {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        width: 100%;
+        padding: 0;
+        padding: 0;
         justify-content: space-around;
    }
 
-   .nav-link a:hover {
+   .header-container ul li a {
+     display: inline-block;
+     width: 50vw;
+     padding: 10px 0;
+     text-align: center;
+     background-color: transparent;
+     /* border-radius: 10px; */
+     transition: background-color 0.3s ease, color 0.3s ease;
+   }
+
+   .header-container ul li a:hover,
+   .header-container ul li a:focus {
      padding-bottom: 20px;
      border-top: none;
      border-bottom: 2px solid var( --main-color);
-     color:  var( --main-color);
+     background-color:  white;
+     color: var(--main-color);
    }
 
    header h2 {
@@ -475,12 +498,46 @@ a:link, a:visited, a:active {
     }
 
     .nav-link {
-        padding-top: 0px;
+        padding: 10px 0;
     }
 
     .filters nav {
         height: 200px;
     }
+
+    /** search form **/
+    .button-text {
+        display: none;
+    }
+
+    .button-icon {
+        display: inline;
+        font-size: 1.2em;
+        color: white;
+    }
+
+    .input-and-button {
+        display: flex;
+        align-items: center;;
+    }
+
+    .button {
+        width: 50px;
+        padding: 0;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    .input {
+       border: 1px solid rgba(0, 0, 0, 0.1);
+       border-right: none;
+       z-index: 2;
+    }
+
+    .location-icon {
+        margin-top: -5px;
+    }
+
 }
 
 @media (width < 1024px) {
@@ -498,7 +555,6 @@ a:link, a:visited, a:active {
     }
 
     .popular-cards {
-        /* border: 2px solid red; */
         display:flex;
         gap: 20px;
     }
