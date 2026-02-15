@@ -345,7 +345,7 @@ header p {
     display: flex;
     justify-content: space-between;
     gap: 40px;
-    flex-wrap: no-wrap;
+    max-height: 100px;
 }
 
 .filters-cards .icon {
@@ -386,7 +386,7 @@ header p {
 .accommodations-info {
     display: flex;
     justify-content: flex-start;
-    width: 600px; 
+    /* width: 600px;  */
     gap: 10px;
     font-size: 1.1em;
     padding: 10px 10px 20px 0px;
@@ -433,7 +433,7 @@ a:link, a:visited, a:active {
     color: black;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) and (min-width: 320px) {
    #main-container {
         grid-template-columns: 1fr;
    }
@@ -442,8 +442,34 @@ a:link, a:visited, a:active {
       order: 1;
    }
 
-   .listings {
+    .listings {
         order: 2;
+   }
+
+   .accommodation {
+      order: 2;
+      flex-direction: column;
+   }
+
+   .accommodation-and-popular .accommodation {
+          background-color: white;
+   }
+
+   .popular-cards {
+      flex-direction: column;
+   }
+
+   .accommodation-cards {
+     display: flex;
+     flex-direction: column;
+   }
+
+   .accommodation-cards .card {
+    width: 100%;
+}
+
+   .places-to-visit-cards {
+     flex-direction: column;
    }
 
    .footer-container {
@@ -500,6 +526,10 @@ a:link, a:visited, a:active {
 
     .filters nav {
         height: 200px;
+    }
+
+    .filters-cards {
+        flex-wrap: nowrap;
     }
 
     /** search form **/
@@ -589,9 +619,9 @@ a:link, a:visited, a:active {
         
     }
 
-    .accommodations-info {
+    /* .accommodations-info {
         margin-top: 20px;
-    }
+    } */
 }
 
 
