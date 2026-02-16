@@ -16,7 +16,7 @@
 
 <body>
     <div id="main-container">
-        <header>
+        <header class="header">
             <nav class="header-container">
                 <div class="booki-logo">
                     <img src="./images/logo/Booki.png" alt="Booki page logo">
@@ -33,57 +33,59 @@
                 </nav>
             </nav>
             <h2>Find a place to stay for your dream vacation</h2>
-            <p>In the heart of the city or surrounded by nature</p>
+            <p>In the heart of the city or surrounded by nature</p>        
+            <section class="search-form">
+                <form class="form-container" method="get" action="">
+                    <div class="location-icon">
+                        <i class="fa-solid fa-location-dot fa-lg"></i>
+                    </div>
+                    <div class="input-and-button">
+                        <input type="text" class="input" value="Marceille, France" id="name">
+                        <button class="button" type="submit">
+                            <span class="button-text">
+                                <h3>Search</h3>
+                            </span> 
+                            <i class="fa-solid fa-magnifying-glass button-icon"></i>
+                        </button>
+                    </div>
+                </form>
+            </section>
+            <section class="filters">
+                <nav>
+                    <div class="filters-header">
+                        <h3>Filters</h3>
+                    </div>
+                    <div class="filters-cards">
+                        <div class="budget card">
+                            <i  class="fa-lg fa-solid fa-money-bill-wave icon"></i>
+                            <h3 class="filter-card-title">Budget</h3>
+                        </div>
+                        <div class="family-friendly card">
+                            <i class="fa-lg fa-solid fa-person icon"></i>
+                            <h3 class="filter-card-title">Family-Friendly</h3>
+                        </div>
+                        <div class="romanic card">
+                            <i class="fa-lg fa-sharp fa-solid fa-heart icon"></i>
+                            <h3 class="filter-card-title">Romanic</h3>
+                        </div>
+                        <div class="top-pick card">
+                            <i class="fa-lg fa-solid fa-fire icon"></i>
+                            <h3 class="filter-card-title">Our Top Picks</h3>
+                        </div>
+                    </div>
+                </nav>
+            </section>
+            <section>
+                <div class="accommodations-info">
+                    <div class="info-icon">
+                        <i class="fa-solid fa-info fa-xs"></i>
+                    </div>
+                    <div>
+                        <p>There are over 500 available places to stay in this city</p>
+                    </div>
+                </div>
+            </section>
         </header>
-        <section class="search-form">
-            <form class="form-container" method="get" action="">
-                <div class="location-icon">
-                    <i class="fa-solid fa-location-dot fa-lg"></i>
-                </div>
-                <div class="input-and-button">
-                    <input type="text" class="input" value="Marceille, France" id="name">
-                    <button class="button" type="submit">
-                        <span class="button-text">
-                            <h3>Search</h3>
-                        </span> 
-                        <i class="fa-solid fa-magnifying-glass button-icon"></i>
-                    </button>
-                </div>
-            </form>
-        </section>
-        <section class="filters">
-            <nav>
-                <div class="filters-header">
-                    <h3>Filters</h3>
-                </div>
-                <div class="filters-cards">
-                    <div class="budget card">
-                        <i  class="fa-lg fa-solid fa-money-bill-wave icon"></i>
-                        <h3 class="filter-card-title">Budget</h3>
-                    </div>
-                    <div class="family-friendly card">
-                        <i class="fa-lg fa-solid fa-person icon"></i>
-                        <h3 class="filter-card-title">Family-Friendly</h3>
-                    </div>
-                    <div class="romanic card">
-                        <i class="fa-lg fa-sharp fa-solid fa-heart icon"></i>
-                        <h3 class="filter-card-title">Romanic</h3>
-                    </div>
-                    <div class="top-pick card">
-                        <i class="fa-lg fa-solid fa-fire icon"></i>
-                        <h3 class="filter-card-title">Our Top Picks</h3>
-                    </div>
-                </div>
-            </nav>
-        </section>
-        <section>
-            <div class="accommodations-info">
-                <div class="info-icon">
-                    <i class="fa-solid fa-info fa-xs"></i>
-                </div>
-                <p>There are over 500 available places to stay in this city</p>
-            </div>
-        </section>
         <main>
             <div class="accommodation-and-popular">
                 <section class="accommodation">
