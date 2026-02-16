@@ -515,6 +515,10 @@ a:link, a:visited, a:active {
       border-radius: 0;
     }
 
+    .popular-cards img {
+        width: 25%;
+    }
+
     .listings {
         order: 2;
    }
