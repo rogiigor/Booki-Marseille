@@ -282,10 +282,6 @@ header p {
     display: flex;
 }
 
-.input-and-button {
-    display: flex;
-}
-
 .input {
     height: 50px;
     width: 180px;
@@ -674,13 +670,6 @@ a:link, a:visited, a:active {
         color: white;
     }
 
-    .input-and-button {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-shrink: 2;
-    }
-
     .button {
         width: 60px;
         height: 70px;
@@ -689,22 +678,6 @@ a:link, a:visited, a:active {
         border-bottom-left-radius: 15px;
         transform: translateX(-10px);
         z-index: 1;
-    }
-
-    .input {
-       border: 1px solid rgba(0, 0, 0, 0.1);
-       border-right: none;
-       padding-top: 8px;
-       padding-bottom: 8px;
-    }
-
-    .location-icon {
-        margin-top: -10px;
-        height: 155%;
-    }
-
-    .location-icon i {
-        margin-top: 30px;
     }
 
     .things-to-do {
@@ -721,11 +694,58 @@ a:link, a:visited, a:active {
        max-width: 100%;
     }
 
+    .form-container {
+        display: grid;
+        grid-template-columns: 1fr 10fr 1fr;
+        width: 100%;
+        max-width: 100vw;
+        gap: 10px;
+    }
+
+    .input {
+       border: 1px solid rgba(0, 0, 0, 0.1);
+       border-right: none;
+       padding-top: 8px;
+       padding-bottom: 8px;
+       width: 100%;
+    }
+
+    .location-icon {
+        margin-top: 0;
+        margin-right: -10px;
+        height: 100%;
+    }
+
+    .location-icon i {
+        margin-top: 30px;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
     .filters-cards .top-pick {
         grid-column: auto;
+    }
+
+    .form-container {
+        grid-template-columns: 1fr 16fr 1fr;
+    }
+
+    input::placeholder {
+        position: absolute;
+        left: 10px;
+    }
+
+    .filters-cards {
+        margin-top: 20px;
+    }
+
+    .filters-cards .card {
+        gap: 10px;
+    }
+
+    .filters {
+        margin-bottom: -30px;
     }
 }
 
