@@ -723,7 +723,7 @@ a:link, a:visited, a:active {
 
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
     .filters-cards .top-pick {
         grid-column: auto;
     }
