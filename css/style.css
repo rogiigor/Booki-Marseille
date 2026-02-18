@@ -204,10 +204,11 @@ body {
 }
 
 .places-to-visit-cards img {
-    height: 250px;
+    height: 350px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     max-width: 100%;
+    width: 300px;
 }
 
 .places-to-visit-cards .card-content {
