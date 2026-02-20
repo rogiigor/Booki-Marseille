@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin-top: 0;
 }
 
 #main-container {
@@ -179,11 +180,23 @@ body {
 
 /* **** Things to Do ******* */
 .things-to-do {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 80px;
 }
 
-.things-to-do .things-to-do-title {
+.things-to-do-title {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: 0;
+}
+
+.things-to-do 
+.things-to-do-title {
     padding-left: 1%;
 }
 
@@ -224,6 +237,11 @@ body {
 }
 
 /****** Header *************/
+
+.header {
+    margin: 0;
+}
+
 .header-container {
     display: flex;
     flex-direction: row;
@@ -245,6 +263,8 @@ body {
     flex-direction: row;
     list-style: none;
     gap: 40px;
+    margin-top: -8px;
+    padding: 0;
 }
 
 .nav-link {
@@ -483,7 +503,7 @@ a:link, a:visited, a:active {
 }
 
 /** iphone */
-@media screen and (max-width: 768px) {
+@media screen and (width < 768px) {
    #main-container {
         padding: 0;
         margin: 0;
@@ -599,7 +619,7 @@ a:link, a:visited, a:active {
         padding: 20px;
         margin: 20px;
         padding-bottom: 0;
-        margin-bottom: 0;
+        margin-bottom: 40px;
    }
 
    .header-container ul {
