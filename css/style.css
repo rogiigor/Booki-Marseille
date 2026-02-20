@@ -183,7 +183,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    /* max-width: 1200px; */
     margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 80px;
@@ -191,7 +190,6 @@ body {
 
 .things-to-do-title {
     width: 100%;
-    /* max-width: 1200px; */
     margin-left: 0;
 }
 
