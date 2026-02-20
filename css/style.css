@@ -183,7 +183,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 80px;
@@ -191,7 +191,7 @@ body {
 
 .things-to-do-title {
     width: 100%;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin-left: 0;
 }
 
@@ -206,10 +206,11 @@ body {
     gap: 20px;
 }
 
-.places-to-visit-cards .card {
+.places-to-visit-cards .clickable-card {
     display: flex;
     flex-direction: column;
     margin-top: 33px;
+    flex: 1;
 }
 
 .places-to-visit-cards .fill-card {
@@ -220,8 +221,7 @@ body {
     height: 350px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    max-width: 100%;
-    width: 300px;
+    width: 100%;
 }
 
 .places-to-visit-cards .card-content {
