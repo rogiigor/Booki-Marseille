@@ -306,7 +306,7 @@ header p {
     border: 1px solid rgba(0, 0, 0, 0.1);
     font-weight: bold;
     font-size: 1.20em;
-    padding-left: 30px;
+    padding-left: 15%;
 }
 
 .button {
@@ -740,6 +740,7 @@ a:link, a:visited, a:active {
 
 }
 
+/* small screens */
 @media screen and (max-width: 600px) {
     .filters-cards .top-pick {
         grid-column: auto;
@@ -749,9 +750,8 @@ a:link, a:visited, a:active {
         grid-template-columns: 1fr 16fr 1fr;
     }
 
-    input::placeholder {
-        position: absolute;
-        left: 10px;
+    .input {
+        padding-left: 15%;
     }
 
     .filters-cards {
@@ -767,4 +767,9 @@ a:link, a:visited, a:active {
     }
 }
 
-
+/* extra small screens */
+@media screen and (max-width: 400px) {
+    .input {
+        padding-left: 5%;
+    }
+}
