@@ -1,4 +1,4 @@
-# booki-starter-pack
+
 
 ![Booki logo](./images/logo/Booki.png)
 <br>
