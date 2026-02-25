@@ -506,9 +506,20 @@ a:link, a:visited, a:active {
 
 /** iphone */
 @media screen and (width < 768px) {
+   html {
+      scrollbar-gutter: stable; 
+   }
+
+   body {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      min-width: 320px;
+   }
+
    #main-container {
-        padding: 0;
-        margin: 0;
+       width: 100%;
+       padding: 0;
    }
 
    .header {
