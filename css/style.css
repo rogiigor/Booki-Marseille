@@ -13,17 +13,18 @@
     color: var(--main-color);
 }
 
+body,
+#main-container {
+    margin: 0 auto;
+}
+
 body {
-    display: flex;
-    justify-content: center;
-    margin-top: 0;
     max-width: 1440px;
-    min-width: 320px;
+    min-width: 1024x;
 }
 
 #main-container {
-    width: 100%;
-    padding: 0 50px;
+    width: 90%;
     box-sizing: border-box;
 }
 
