@@ -20,7 +20,7 @@ body,
 
 body {
     max-width: 1440px;
-    min-width: 1024x;
+    min-width: 1024px;
 }
 
 #main-container {
@@ -328,6 +328,8 @@ input::placeholder {
 
 .button-text {
     display: inline;
+    font-weight: bold;
+    font-size: 1.17em;
 }
 
 .button-icon {
@@ -453,6 +455,12 @@ a:link, a:visited, a:active {
 
 /** ipad **/
 @media (width <= 1024px) {
+    body {
+        display: flex;
+        justify-content: center;
+        min-width: 768px;
+    }
+
     .accommodation-and-popular {
         flex-direction: column;
         gap: 60px;
@@ -506,9 +514,6 @@ a:link, a:visited, a:active {
 
 /** iphone */
 @media screen and (width < 768px) {
-   html {
-      scrollbar-gutter: stable; 
-   }
 
    body {
       display: flex;
